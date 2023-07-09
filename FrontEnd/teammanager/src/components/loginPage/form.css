@@ -1,0 +1,9 @@
+/* EmailInput.css */
+.formInput{
+    width: 18rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: #FFF8EE;
+    text-align: center;
+    margin: 4px;
+}

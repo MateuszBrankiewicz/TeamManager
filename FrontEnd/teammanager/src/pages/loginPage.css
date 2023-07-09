@@ -1,0 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/comics');
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C7E6FC;
+    min-height: 100vh;
+    
+}
+#loginBar{
+    font-style: comics;
+    background-color: #F8F8F8;
+    position: absolute;
+    height: 25rem;
+    width: 25rem;
+    padding: 15px;
+    border-radius: 0.5rem;
+}
