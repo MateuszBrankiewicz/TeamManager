@@ -1,4 +1,4 @@
-button{
+.button{
     width: 500px;
     height: 65px;
     border-radius: 10px;
@@ -6,8 +6,35 @@ button{
     color: #ECECEC;
     margin-top: 20px
 }
-button:hover{
+.button:hover{
     background-color: #053a53;
     color: #ECECEC;
     cursor: pointer;
+}
+/* @media screen and (min-width: 372px) {
+    .button{
+        width: 250px;
+    }
+    .button:hover{
+        background-color: #053a53;
+        color: #ECECEC;
+        cursor: pointer;
+    }
+} */
+@media screen and (max-width: 1024px) {
+    .button{
+        width: 500px;
+        height: 55px;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    
+    .button{
+        width: 220px;
+        height: 55px;
+        margin-top: 30px;
+    }
+   
 }

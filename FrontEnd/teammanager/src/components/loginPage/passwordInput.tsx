@@ -1,10 +1,14 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import "./form.css"
-const PasswordInput = () => {
+interface PasswordInputProps{
+  value : string;
+  onChange:(event: ChangeEvent<HTMLInputElement>)=> void;
+}
+const PasswordInput: React.FC<PasswordInputProps> = ({value,onChange}) => {
   return (
     <div id="formLabel">
     <form>
-      <input className="formInput" type="password" placeholder="Enter password" />
+      <input className="formInput" value={value} onChange={onChange} type="password" placeholder="Enter password" />
     </form>
     </div>
   );
