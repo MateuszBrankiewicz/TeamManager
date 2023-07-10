@@ -1,9 +1,17 @@
-import React from "react";
-import "./Buttons.css"
+import React from 'react';
+interface SignInButtonProps {
+    onClick: () => void;
+  }
+const SignInButton: React.FC<SignInButtonProps> = ({ onClick }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
 
-const SignInButton = () => {
-    return(
-        <button>SIGN IN</button>
-    );
+  return (
+    <button className='button' onClick={handleClick}>SIGN IN</button>
+  );
 };
+
 export default SignInButton;

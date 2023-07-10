@@ -3,7 +3,7 @@ import './App.css';
 import './pages/loginPage.css'
 import LoginPage from './pages/loginPage';
 import './assets/fonts.css';
-
+import './components/loginPage/Buttons.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 const App = () => {
   return (
