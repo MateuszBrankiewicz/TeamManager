@@ -8,8 +8,6 @@ button{
 }
 button:hover{
     background-color: #053a53;
-    /* color: #ECECEC; */
-    /* cursor: pointer; */
     color: #ECECEC;
     cursor: pointer;
 }
