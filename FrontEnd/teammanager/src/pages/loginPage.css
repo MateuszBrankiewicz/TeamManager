@@ -3,11 +3,12 @@
     
     background-color: #C7E6FC;
     min-height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 #loginBar{
+    margin-top: -80px;
 display: grid;
 justify-content: center;
 align-items: center;
@@ -28,4 +29,11 @@ h2{
 p{
     text-align: center;
     font-size: 22px;
+}
+img{
+    width: 600px;
+    height: 500px;
+    margin: -300px;
+    margin-left: auto;
+    margin-right: auto
 }

@@ -2,11 +2,13 @@ import React from "react";
 import EmailInput from "../components/loginPage/emailInput";
 import PasswordInput from "../components/loginPage/passwordInput";
 import "./loginPage.css"
+import Logo from'C:\\wlasne projekty\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\logo.png'
+//musisz dodac swoja sciezke do zdjecia 
 import SignInButton from "../components/loginPage/SignInButton";
 const LoginPage = () => {
     return(
         <div id="main">
-            
+            <img src={Logo} alt = "logo"></img>
         <div id="loginBar">
             <h2>Login</h2>
             <EmailInput></EmailInput>
