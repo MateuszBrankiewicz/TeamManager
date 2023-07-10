@@ -1,72 +1,91 @@
 @import url('https://fonts.cdnfonts.com/css/comics');
-#main{
-    
+#main {
     background-color: #C7E6FC;
     min-height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
-}
-#loginBar{
-    margin-top: -80px;
-display: grid;
-justify-content: center;
-align-items: center;
-width: 600px;
-height: 680px;
-left: 650px;
-top: 240px;
-background: #F8F8F8;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 60px rgba(0, 0, 0, 0.25);
-border-radius: 8px;
-
-}
-h2{
+  }
+  
+  #loginBar {
+    margin-top: -50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 680px;
+    left: 650px;
+    top: 240px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 60px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+  
+  h2 {
     text-align: center;
     font-weight: 400;
     font-size: 40px;
-}
-p{
+  }
+  
+  p {
     text-align: center;
     font-size: 22px;
-}
-img{
+  }
+  
+  img {
     width: 600px;
     height: 500px;
     margin: -300px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+  }
+
+@media screen and (max-width: 1024px) {
+  #loginBar {
+    width: 550px;
+    height: 550px;
+  }
+
+  img {
+    width: 450px;
+  }
+
+  p {
+    margin-top: 40px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
 }
-@media screen and (min-width: 372px) {
+@media screen and (max-width: 600px) {
     #main {
-        display: flex;
-        margin: auto;
-        flex-direction: column;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
     }
-
-
-#loginBar {
-    margin: auto;
-    margin-top: 155px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 400px;
-    left: 350px;
-    top: 20px;
-    background: #F8F8F8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 60px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    
-}
-img{
-    width: 300px;
-    margin-top: -150px ;
-    
-}
-    p{
-        font-size: 18px;
+  
+    #loginBar {
+      width: 250px;
+      height: 450px;
+      margin: auto;
+      margin-top: 155px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+      background: #F8F8F8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 60px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
     }
-}
+  
+    img {
+      width: 200px;
+      height: 500px;
+      margin-top: -150px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  }

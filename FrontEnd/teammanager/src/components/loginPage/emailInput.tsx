@@ -9,7 +9,6 @@ const EmailInput: React.FC<EmailInputProps> = ({ value, onChange }) => {
     <div id="formLabel">
     <form>
       <input className="formInput" type="text" value={value} onChange={onChange} placeholder="Enter email" />
-
     </form>
     </div>
   );
