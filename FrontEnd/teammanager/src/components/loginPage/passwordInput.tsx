@@ -4,7 +4,7 @@ const PasswordInput = () => {
   return (
     <div id="formLabel">
     <form>
-      <input className="formInput" type="text" placeholder="Enter password" />
+      <input className="formInput" type="password" placeholder="Enter password" />
     </form>
     </div>
   );
