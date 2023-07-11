@@ -1,0 +1,32 @@
+.button{
+    width: 500px;
+    height: 65px;
+    border-radius: 10px;
+    background: linear-gradient(102.24deg, #628FCE 41.09%, #7C4BA3 66.89%);
+    color: #ECECEC;
+    margin-top: 0px
+}
+.button:hover{
+    background: linear-gradient(102.24deg, #517EBD 41.09%, #6B3A82 66.89%);
+    cursor: pointer;
+}
+.button:active{
+    box-shadow: 0px 4px 30px 3px #628FCE;
+}
+@media screen and (max-width: 1024px) {
+    .button{
+        width: 500px;
+        height: 55px;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    
+    .button{
+        width: 220px;
+        height: 55px;
+        margin-top: 30px;
+    }
+   
+}
