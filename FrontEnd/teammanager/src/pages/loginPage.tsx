@@ -1,13 +1,10 @@
 import React, { ChangeEvent, useState } from "react";
-import EmailInput from "../components/loginPage/emailInput";
-import PasswordInput from "../components/loginPage/passwordInput";
+import Input from "../components/loginPage/Input";
 import "./loginPage.css"
-import Logo from'C:\\Users\\VivoBook\\Desktop\\teamManager\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\logo.png'
-import Ico from 'C:\\Users\\VivoBook\\Desktop\\teamManager\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\ico1.png'
-//musisz dodac swoja sciezke do zdjecia 
-// import Logo from'C:\\wlasne projekty\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\logo.png'
-// //musisz dodac swoja sciezke do zdjecia a moja skomentowac 
-import SignInButton from "../components/loginPage/SignInButton";
+
+import Logo from'C:\\Projekty\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\logo.png'
+import Button from "../components/loginPage/Button";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
         const [email,setEmail] = useState("")
         const [password,setPassword] = useState("")
@@ -54,17 +51,18 @@ const LoginPage = () => {
         }
     };        
     return(
+        
         <div id="main">
-            <img src={Logo} alt = "logo"></img>
+          <img src={Logo} alt = "logo"></img>   
         <div id="loginBar">
             <h2>Hello!</h2>
             <h3>Sign in to your account</h3>
             {/* <img src={Ico} alt="ico"></img> */}
-            <EmailInput value={email} onChange={handleEmailChange}></EmailInput>
-            <PasswordInput value={password} onChange={handlePasswordChange}></PasswordInput>
-            <SignInButton onClick ={signInFunction} ></SignInButton>
+            <Input value={email} onChange={handleEmailChange} type="text" message="Enter email"></Input>
+            <Input value={password} onChange={handlePasswordChange} type="password" message="Enter password"></Input>
+            <Button onClick ={signInFunction} message="SignIn"></Button>
             <p>Forgot <b><a href="">Username/Password?</a></b><br></br>
-            Don't have an account? <b><a href="">Sign up</a></b></p>
+            Don't have an account? <b><Link to="/register">Sign up</Link></b></p>
         </div>
         </div>
     );

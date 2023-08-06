@@ -1,15 +1,15 @@
 import React, { ChangeEvent, useState } from "react";
-import EmailInput from "../components/loginPage/emailInput";
-import PasswordInput from "../components/loginPage/passwordInput";
-import NameInput from "../components/registerPage/nameInput";
-import SurnameInput from "../components/registerPage/surnameInput";
+import Input from "../components/loginPage/Input";
+
 import "./registerPage.css"
-import Logo from'C:\\Users\\VivoBook\\Desktop\\teamManager\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\logo1.png'
-import Ico from 'C:\\Users\\VivoBook\\Desktop\\teamManager\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\ico1.png'
+
+import Ico from '../assets/img/ico1.png'
 //musisz dodac swoja sciezke do zdjecia 
-// import Logo from'C:\\wlasne projekty\\TeamManager\\FrontEnd\\teammanager\\src\\assets\\img\\logo.png'
-// //musisz dodac swoja sciezke do zdjecia a moja skomentowac 
-import SignUpButton from "../components/registerPage/SignUpButton";
+import Logo from '../assets/img/logo.png'
+
+import Button from "../components/loginPage/Button";
+import { Link } from "react-router-dom";
+import LoginPage from "./loginPage";
 const RegisterPage = () => {
         const [name,setName] = useState("")
         const [surname,setSurname] = useState("")
@@ -72,14 +72,14 @@ const RegisterPage = () => {
             <img src={Logo} alt = "logo"></img>
         <div id="loginBar">
             <h2>Sign Up</h2>
-            {/* <img src={Ico} alt = "ico"></img> */}
-            <NameInput value={name} onChange={handleNameChange}></NameInput>
-            <SurnameInput value={surname} onChange={handleSurnameChange}></SurnameInput>
-            <EmailInput value={email} onChange={handleEmailChange}></EmailInput>
-            <PasswordInput value={password} onChange={handlePasswordChange}></PasswordInput>
+             <img src={Ico} alt = "ico"></img> 
+            <Input value={name} onChange={handleNameChange} type="text" message="Enter name"></Input>
+            <Input value={surname} onChange={handleSurnameChange}type="text" message="Enter surname"></Input>
+            <Input value={email} onChange={handleEmailChange}type="text" message="Enter email"></Input>
+            <Input value={password} onChange={handlePasswordChange} type="password" message="Enter password"></Input>
             <p><input type="checkbox" id="checkbox1"></input>   I read and agree to <a href="">Terms & Conditions</a></p>
-            <SignUpButton onClick ={signUpFunction} ></SignUpButton>
-            <p>Already have an account? <b><a href="">Sign in</a></b></p>
+            <Button onClick ={signUpFunction} message="SignUp"></Button>
+            <p>Already have an account? <b><Link to='/'>Sign in</Link></b></p>
         </div>
         </div>
     );

@@ -2,9 +2,12 @@
 #main {
     background: linear-gradient(125.42deg, #6181C4 29.22%, #6F5AAD 69.04%);
     min-height: 100vh;
-    display: grid;
+    min-width: 90vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   a:link{
     color: #6F5AAD;
@@ -13,14 +16,13 @@
       color: #6181C4;
   }
   #loginBar {
-    margin-top: -50px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 680px;
-    left: 650px;
-    top: 240px;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
     background: #F8F8F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 60px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -44,59 +46,17 @@
   }
   
   img {
-    width: 600px;
-    height: 500px;
-    margin: -300px;
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    top: -15%;
+    width: 90%;
+    height: 50%;
   }
 
-@media screen and (max-width: 1024px) {
-  #loginBar {
-    width: 550px;
-    height: 550px;
-  }
-
-  img {
-    width: 450px;
-  }
-
-  p {
-    margin-top: 40px;
-  }
-
-  h2 {
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 600px) {
-    #main {
-      display: flex;
-      margin: auto;
-      flex-direction: column;
+@media screen and (min-width: 700px) {
+    #loginBar{
+      width: 492px;
     }
-  
-    #loginBar {
-      width: 250px;
-      height: 450px;
-      margin: auto;
-      margin-top: 155px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column; 
-      background: #F8F8F8;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 20px 60px rgba(0, 0, 0, 0.25);
-      border-radius: 8px;
-    }
-  
-    img {
-      width: 200px;
-      height: 500px;
-      margin-top: -150px;
-    }
-  
-    p {
-      font-size: 18px;
+    img{
+      width: 492px;
     }
   }
